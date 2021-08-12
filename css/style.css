@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(100, 98, 98);
+}
+.container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw; 
+    justify-content: center;
+    align-content: start;
+    grid-gap: 1vw;
+}
+.container-flex{
+    display: flex;
+}
+
+h1{
+    grid-column: span 6;
+    padding-top: 15vh;
+}
+#logo{
+    grid-column: 3/5;
+}
+#logo img{
+    width: 30vw;
+}
+nav{
+    width: 100vw;
+    grid-column: span 6;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    padding:10px;
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    border: 1px solid silver;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+section{
+    width: 100vw;
+    min-height:60vh; 
+}
+section div{
+    grid-column: span 6;
+    margin-top:4vh; 
+    padding:0 3vw 0 3vw; 
+}
+#sobre div div img{
+    width: 100%;
+    border: 1px solid silver; 
+}
+
+#sobre{
+    letter-spacing: 1px;
+    line-height: 20px; 
+}
+#sobre div p{
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 15px;
+}
+#cursos{
+    border: 1px solid;
+}
+
+#cursos div img {
+    width:100%;
+}
+
+#cursos div h2{
+    margin-top:1vh;
+    background-color:#ddd;
+    text-align: Center;
+    padding:2vh 0 2vh 0;
+}
+#curso-wd{
+    
+    border-top:2vh solid#f00;
+}
+
+#curso-prog{
+    
+    border-top:2vh solid#0f0;
+}
+#curso-bd{
+     
+    border-top:2vh solid#00f;
+}
+#planos{
+    letter-spacing: 1px;
+    line-height: 32px; 
+    border: 1px solid silver;
+}
+#planos div h2{
+    margin-top: 2vh; 
+    background-color:#ddd;
+    text-align:center;
+    border: 1px solid black;
+}
+#planos div h4{
+    margin: 5vh;
+    background-color:#ffffff; 
+    text-align:center;
+    border: 1px solid black;  
+}
+#planos div p{
+    line-height: 32px;
+    font-size:15px;
+    background-color:#ffffff; 
+}
+#plano-bronze{
+    background-color: #cd7f32;
+}
+#plano-prata{
+    background-color: #c0c0c0;
+}
+#plano-ouro{
+    background-color: #ccac00;
+}
+#valores{
+    letter-spacing: 1px;
+    line-height: 32px; 
+    border: 1px solid silver;
+}
+#valores div h2{
+    margin-top: 1vh; 
+    border-color: #0f0;
+}
+#valores div p{
+    line-height: 32px;
+    font-size:15px;
+}
+
+@media only screen and (min-width: 980px){
+    #logo{
+        grid-column: 1/2;
+    }
+    #logo img{
+        width: 10vw;
+    }
+    nav{
+        grid-column: 3/6;
+        padding-top: 5vh;
+    }
+    section div{
+        grid-column: span 2;
+    }
+    #sobre div{
+        grid-column: span 3;
+    }
+
+    #cursos{
+        display:flex;
+    }
+    #cursos div{
+        align-self: flex-end;
+        width: 30%;
+    }
+}
